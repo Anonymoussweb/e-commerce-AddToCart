@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Mheader .header {
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+    height: 40px;
+}
+.Mheader .header .nav ul li{
+    display: inline-block;
+   list-style: none;
+   padding: 10px 10px
+   
+}
+.Mheader .header .nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+.Mheader .header .nav ul li a:hover{
+   background-color: black;
+    color: red;
+    border-radius: 5px;
+}
+span{
+    color: red;
+}
+
+.cart-icon{
+    position: absolute;
+    top: 0;
+    
+}
+.open, .close{
+    display: none;    
+}
+@media only screen and (max-width:600px) {
+    .nav ul{
+        display: none;
+    }
+    
+    .open{
+        display:block;
+        color: black;
+        margin-top: 10px;
+        position:absolute;
+        right: 10px;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+       
+    }
+    .nav ul{
+        position: absolute;
+        width: 30%;
+        height: 100vh;
+        top: 40px;
+        left: 10px;
+        background-color:antiquewhite;
+        display: block;
+    
+    }
+    .nav ul li {
+        display: block;
+        margin: 10px 50px;
+        
+    }
+   span{
+    display: none;
+   }
+}
+/* ------------------about----------- */
+
+.About h1{
+    text-align: center;
+}
+.About .content2{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+
+}
+.About .content2 img{
+    width: 900px;
+    height: 600px;
+}
+
+
+/* ------------home page-------- */
+
+.Hheader{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    
+}
+button{
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: blueviolet;
+}
+.Hheader .content1 h1,p{
+    margin-top: 20px;
+}
+.Hheader .content1{
+    padding: 100px 2px 50px 50px;
+
+}
+
+
+.Hheader .figure img{
+    width: 450;
+    height: 350px;
+    box-shadow: 0 2px 5px black;
+   
+}
+
+/* ---------------services--------- */
+
+.services{
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   gap: 20px;
+
+}
+.services .Sicon{
+    font-size: 50px;
+}
+.services div{
+    background-color: rgb(209, 195, 195);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ----------------trusted-------------- */
+
+.trusted{
+    position: relative;
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 30vh;
+background-color: rgb(209, 195, 195);
+margin-top: 20px;
+
+
+}
+.trusted h3{
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+}
+.trusted div img{
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.trusted div img:hover{
+    transform: scale(1.1);
+}
+/* ------------------contactpage-------------- */
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.Contact h2{
+    position: absolute;
+    top: 20px;
+    left: 600px;
+}
+
+.Contact .map iframe{
+    margin-top: 80px;
+  width: 100%;
+  height: 70vh;
+}
+/* -----------------------form------------ */
+
+.Contact .form form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   
+    
+}
+.Contact .form form input{
+    width: 230px;
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+}
+.btn{
+    background-color: green;
+    margin-left: 120px;
+}
+textarea{
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.Contact .form{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 35%;
+    width: 30%;
+    height: 50vh;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+/* ---------------footer---------- */
+.Footer{
+    background-color: rgb(209, 195, 195);
+    margin-top: 30px;
+    height: 40vh;
+    position: relative;
+}
+
+.Footer .footer1{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+   
+}
+.Footer .footer1 .fsubs{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.Footer .footer1 .footericons{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.Footer .footer1 .footericons .ficons{
+    display: flex;
+    gap: 15px;   
+}
+.icons{
+    font-size: 30px;
+     cursor: pointer;
+}
+.sbtn{
+    margin: 10px;
+    padding: 0;
+    background-color: antiquewhite;
+    width: 80px;
+    height: 15px;
+}
+.Footer .footerend{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.Footer .footermid{
+    width: 70%;
+    height: 80px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    position: absolute;
+    left: 15%;
+    top: -30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* ------------------error page-------------- */
+
+.Error{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+}
+.Errorbtn{
+    width: 150px;
+    height: 20px;
+    margin-left: 45%;
+    margin-bottom: 10%;
+}
+/* ------------------products------------ */
+
+
+.MP{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+    gap: 20px;
+}
+.MP .products{
+    width: 30%;
+}
+.MP .products .p1{
+    display: block;
+}
+.button{
+    background-color: burlywood;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: black;
+    color: red;
+   
+}
+
+.MP .products img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* -----------------cartitem-------------- */
+.List{
+    display: block;
+}
+.List .cartitems{
+ margin-left: 20%;
+}
+.List .cartitems .cartimage{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+.custom{
+    background-color: chartreuse;
+    margin: 10px;
+}
+.total{
+
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+      
